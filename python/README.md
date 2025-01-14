@@ -10,7 +10,7 @@ This package provides utility functions for accessing our internal data infrastr
 ├── requirements-dev.txt    # Project development dependencies
 ├── setup.cfg               # Package configuration
 ├── pyproject.toml          # Package configuration
-├── src/                    # Source code for utilities 
+├── src/                    # Source code for utilities
 └── examples/               # Usage examples
 ```
 
@@ -18,14 +18,14 @@ This package provides utility functions for accessing our internal data infrastr
 
 1. Create and activate a virtual environment:
 
-Using `venv`: 
+Using `venv`:
 
 ```bash
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 ```
 
-Or you may want to use `pyenv`: 
+Or you may want to use `pyenv`:
 
 ```
 pyenv virtualenv <PYTHON_VERSION> virtualenv <VIRTUALENV_NAME>
@@ -46,7 +46,18 @@ pip install -e .
 
 4. Set up the following environment variables in a `.env` file:
 ```
-# TODO
+DS_AZ_BLOB_DEV_SAS=<provided on request>
+DS_AZ_BLOB_PROD_SAS=<provided on request>
+
+DS_AZ_DB_DEV_PW=<provided on request>
+DS_AZ_DB_DEV_UID=<provided on request>
+
+DS_AZ_DB_PROD_PW=<provided on request>
+DS_AZ_DB_PROD_UID=<provided on request>
+
+DS_AZ_DB_DEV_HOST=<provided on request>
+DS_AZ_DB_PROD_HOST=<provided on request>
+
 ```
 
 ### Pre-Commit

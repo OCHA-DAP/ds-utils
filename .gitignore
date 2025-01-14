@@ -9,3 +9,6 @@ __pycache__
 *.ipynb
 
 *.egg-info/
+
+*/venv/*
+python/examples/temp/*
